@@ -18,4 +18,4 @@ It allows for the company to create a module that can be completed by the user f
 **Company Admin** - *Username*: <> *Password*: <> \
 **Company User** - *Username*: <> *Password*: <> \
 **Admin for Adding a Company** \
-*Username*: <> *Password*: <> \
+*Username*: <> *Password*: <> 
