@@ -124,4 +124,8 @@ body {
 .marquee__selector__image.active {
   background-color: #333;
 }
+
+.form {
+  z-index: 1000;
+}
 /*# sourceMappingURL=style1.css.map */

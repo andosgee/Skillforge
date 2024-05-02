@@ -15,6 +15,8 @@ It allows for the company to create a module that can be completed by the user f
 ## Index Page
 ### Marquee
 Uses x amount of picture from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
+### Request Demo
+Library used: Chosen. This is for searching in a dropdown. Jquery is called.
 
 ## Useful Login information
 **Company Name** \
