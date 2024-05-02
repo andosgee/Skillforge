@@ -9,6 +9,8 @@ include "includes/head.php";
         include "includes/headernav.php";
         include "includes/marquee.php";
         include "includes/about.php";
+        include "includes/requestdemo.php";
+        include "includes/contact.php";
     ?>
 
 </body>
