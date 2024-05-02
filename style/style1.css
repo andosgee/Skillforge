@@ -66,41 +66,62 @@ body {
 }
 
 .marquee {
+  position: relative;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  width: 100%; /* Set the width of the marquee */
-  height: 50px; /* Set the height of the marquee */
+  max-height: 12.5em;
 }
-.marquee__content {
-  display: inline-block;
-  animation: marqueeAnimation 60s linear infinite;
+.marquee__wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
-.marquee__contentimg {
-  display: inline-block;
-  width: 100px; /* Set width of each image */
-  height: auto; /* Maintain aspect ratio */
+.marquee__wrapperimg {
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
-
-@keyframes marqueeAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  16.666% {
-    transform: translateX(0);
-  }
-  33.333% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  66.666% {
-    transform: translateX(-200%);
-  }
-  83.333% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
-}/*# sourceMappingURL=style1.css.map */
+.marquee__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.marquee__controlsbutton {
+  font-size: 3em;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+  padding: 2em;
+}
+.marquee__prev {
+  margin-left: 0.625em;
+}
+.marquee__next {
+  margin-right: 0.625em;
+}
+.marquee__selector {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  width: 100%;
+}
+.marquee__selector__image {
+  width: 1em;
+  height: 1em;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.marquee__selector__image.active {
+  background-color: #333;
+}
+/*# sourceMappingURL=style1.css.map */
