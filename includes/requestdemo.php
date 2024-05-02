@@ -42,19 +42,19 @@
         <fieldset class="form__fieldset">
             <legend class="form__legend">Contact Details for Demo</legend>
             <label for="firstName" class="form__label">First Name:</label>
-            <input type="text" name="firstName" class="form__textInput" placeholder="Bob">
+            <input type="text" īd="firstName" class="form__textInput" placeholder="Bob">
             <br>
             <label for="lastName" class="form__label">Last Name:</label>
-            <input type="text" name="lastName" class="form__textInput" placeholder="Smith">
+            <input type="text" id="lastName" class="form__textInput" placeholder="Smith">
             <br>
             <label for="email" class="form__label">Email:</label>
-            <input type="email" name="email" class="form__emailInput" placeholder="bob.smith@example.com">
+            <input type="email" id="email" class="form__emailInput" placeholder="bob.smith@example.com">
             <br>
             <label for="contactPhone" class="form__label">Contact Nmber:</label>
-            <input type="tel" name="contactPhone" class="form__telInput" placeholder="64111111111">
+            <input type="tel" id="contactPhone" class="form__telInput" placeholder="64111111111">
             <br>
             <label for="company" class="form__label">Company:</label>
-            <input type="text" name="company" class="form__textInput" placeholder="Bob Indsutries Inc.">
+            <input type="text" id="company" class="form__textInput" placeholder="Bob Indsutries Inc.">
             <br>
             <label for="countrySelect" class="form__label">Country:</label>
             <select name="countrySelect" id="countries" data-palceholder="Select Country" class="form__select">
