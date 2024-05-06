@@ -21,4 +21,16 @@
         $value = trim($value);
         return $value;
     }
+
+    function getPageTitle(){
+        $fileName = basename($_SERVER["PHP_SELF"]);
+        $fileNameWithoutExtension = pathinfo($fileName, PATHINFO_FILENAME);
+        $pageTitle = str_replace('_', ' ', $fileNameWithoutExtension);
+        $pageTitle = ucwords($pageTitle);
+        if($pageTitle == "Index"){
+            $pageTitle = "Home";
+        }
+        echo "<title>{$pageTitle} | Skillforge</title>";
+        return $pageTitle;
+    }
 ?>
