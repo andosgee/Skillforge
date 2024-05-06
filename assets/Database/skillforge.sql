@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2024 at 10:07 AM
+-- Generation Time: May 06, 2024 at 12:32 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -20,6 +20,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `skillforge`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `companies`
+--
+
+CREATE TABLE `companies` (
+  `companyID` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `address` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `internallogin`
+--
+
+CREATE TABLE `internallogin` (
+  `internalID` int(10) NOT NULL,
+  `firstName` varchar(50) NOT NULL,
+  `lastName` varchar(50) NOT NULL,
+  `email` varchar(70) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `intLevel` int(2) NOT NULL,
+  `active` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `internallogin`
+--
+
+INSERT INTO `internallogin` (`internalID`, `firstName`, `lastName`, `email`, `phone`, `password`, `intLevel`, `active`) VALUES
+(1, 'Web', 'Master', 'webmaster@skillforge.com', '64111111', '$2y$10$Y8FkFjWlSehvNyuC3AqZWuELI8f.ie6OFY08Kr6Oimxybz.rsYj1a', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -49,10 +85,38 @@ INSERT INTO `requestdemo` (`requestID`, `firstName`, `lastName`, `email`, `phone
 --
 
 --
+-- Indexes for table `companies`
+--
+ALTER TABLE `companies`
+  ADD PRIMARY KEY (`companyID`);
+
+--
+-- Indexes for table `internallogin`
+--
+ALTER TABLE `internallogin`
+  ADD PRIMARY KEY (`internalID`);
+
+--
 -- Indexes for table `requestdemo`
 --
 ALTER TABLE `requestdemo`
   ADD PRIMARY KEY (`requestID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `companies`
+--
+ALTER TABLE `companies`
+  MODIFY `companyID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `internallogin`
+--
+ALTER TABLE `internallogin`
+  MODIFY `internalID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
