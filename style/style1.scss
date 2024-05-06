@@ -214,6 +214,7 @@ body{
     padding: 0.5em;
     display: flex;
     flex-direction: column;
+    width: 100%;
     &__wrapper{
         flex-direction: column;
     }
@@ -232,6 +233,16 @@ body{
     }
 }
 
+.login{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    &__wrapper{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
 
 // Media query for responsive page
 @media (min-width: 768px){
@@ -246,6 +257,9 @@ body{
         }
         &__link{
             font-size: 1.8em;
+            &:hover{
+                font-size: 2.1em;
+            }
         }
     }
 
