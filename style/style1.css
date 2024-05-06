@@ -38,31 +38,22 @@ body {
   font-weight: bold;
 }
 
-.content {
-  padding: 0.5em;
-  position: relative;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+.navigation {
+  background-color: #A8DADC;
+  padding: 1em;
+  font-size: 1.2em;
 }
-.content:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #A8DADC);
-  transform: scaleY(-1);
-  opacity: 1;
-  z-index: -1;
+.navigation__link {
+  text-decoration: none;
+  margin: 0 1em;
+  transition: font-size 0.3s, font-weight 0.3s;
 }
-.content__h1 {
-  text-align: center;
+.navigation__link:hover {
+  font-size: 1.4em;
+  font-weight: bold;
 }
-.content__text {
-  text-align: justify;
-  margin: 0.5em;
+.navigation__link:visited {
+  color: inherit;
 }
 
 .marquee {
@@ -118,14 +109,95 @@ body {
   height: 1em;
   background-color: #aaa;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 0.3125em;
   cursor: pointer;
 }
 .marquee__selector__image.active {
-  background-color: #333;
+  background-color: #000000;
+}
+
+.content {
+  padding: 0.5em;
+  position: relative;
+}
+.content__h1 {
+  text-align: center;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content__text {
+  text-align: justify;
+  margin: 0.5em;
+}
+.content__demoForm {
+  display: flex;
+  flex-direction: column;
 }
 
 .form {
-  z-index: 1000;
+  font-size: 1.1em;
+}
+.form__legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.form__label {
+  margin-bottom: 1em;
+}
+.form__textInput {
+  margin-bottom: 1em;
+  font-size: 1em;
+  width: 8em;
+}
+.form__telInput {
+  margin-bottom: 1em;
+  font-size: 1em;
+  width: 6em;
+}
+.form__emailInput {
+  margin-bottom: 1em;
+  font-size: 1em;
+  width: 12em;
+}
+.form__submitInput {
+  font-size: 1em;
+  margin: 1em;
+  background-color: #457B9D;
+  color: #F1FAEE;
+  padding: 0.625em 1.25em;
+  border: none;
+  border-radius: 0.3125em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+.form__submitInput:hover {
+  background-color: #30617B;
+}
+
+@media (min-width: 768px) {
+  .content__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .content__text {
+    width: 50%;
+  }
+  .content__demoForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .form {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style1.css.map */

@@ -1,5 +1,6 @@
 <div id="request" class="content">
 <h1 class="content__h1">Request a Demo</h1>
+    <div class="content__wrapper">
     <div class="content__text">
     Are you curious about how Skillforge can revolutionize learning 
     and streamline operations for you or your organization? <br>
@@ -34,10 +35,12 @@
         </ul>
         
         <h2 class="content__h2">How to Request a Demo</h2>
-        To request a demo, simply fill out the form below with your 
-        contact information and any specific details you'd like us to
-         cover during the demo. Once we receive your request, a member of our team will reach out to schedule a convenient time for your personalized demo session.
+        To request a demo, simply fill out the form with your 
+        contact information. Once we receive your request, a member 
+        of our team will reach out to schedule a convenient time for 
+        your demo session.
     </div>
+    <div class="content__demoForm">
     <form action="" class="form">
         <fieldset class="form__fieldset">
             <legend class="form__legend">Contact Details for Demo</legend>
@@ -66,6 +69,8 @@
             <input type="submit" value="Request" class="form__submitInput">
         </fieldset>
     </form>
+    </div>
+    </div>
     <script src="./chosenLib/chosen.jquery.js" type="text/javascript"></script>
     <script>
         $("#countries").chosen({no_results_text: "Oops, nothing found!"});
