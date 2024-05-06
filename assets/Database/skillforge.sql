@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2024 at 12:51 PM
+-- Generation Time: May 06, 2024 at 10:07 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -36,6 +36,13 @@ CREATE TABLE `requestdemo` (
   `country` varchar(56) NOT NULL,
   `company` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `requestdemo`
+--
+
+INSERT INTO `requestdemo` (`requestID`, `firstName`, `lastName`, `email`, `phone`, `country`, `company`) VALUES
+(0, 'Andrew', 'Grant', 'andosgee@gmail.com', '641111', 'New Zealand', 'Andrew inc');
 
 --
 -- Indexes for dumped tables

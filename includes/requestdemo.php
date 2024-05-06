@@ -16,9 +16,7 @@ A member of our team will be in touch shortly.";
         mail($to,$subject,$message,$headers);
 
         // Push to database
-        $sqlDemoPushQuery = "INSERT INTO `skillforge``firstName`, 
-        `lastName`, `email`, `phone`, `country`, `company`) VALUES
-        ('{$firstName}','{$lastName}','{$email}',{$phone},'{$country}','{$company}')";
+        $sqlDemoPushQuery = "INSERT INTO requestdemo (firstName, lastName, email, phone, country, company) VALUES ('$firstName', '$lastName', '$email', '$phone', '$country', '$company')";
         // Send Query to Database
         $conn -> query($sqlDemoPushQuery);
     }
@@ -71,22 +69,22 @@ A member of our team will be in touch shortly.";
         <fieldset class="form__fieldset">
             <legend class="form__legend">Contact Details for Demo</legend>
             <label for="firstName" class="form__label">First Name:</label>
-            <input type="text" name="firstName" class="form__textInput" placeholder="Bob">
+            <input type="text" name="firstName" class="form__textInput" placeholder="Bob" required>
             <br>
             <label for="lastName" class="form__label">Last Name:</label>
-            <input type="text" name="lastName" class="form__textInput" placeholder="Smith">
+            <input type="text" name="lastName" class="form__textInput" placeholder="Smith" required>
             <br>
             <label for="email" class="form__label">Email:</label>
-            <input type="email" name="email" class="form__emailInput" placeholder="bob.smith@example.com">
+            <input type="email" name="email" class="form__emailInput" placeholder="bob.smith@example.com" required>
             <br>
             <label for="contactPhone" class="form__label">Contact Nmber:</label>
-            <input type="tel" name="contactPhone" class="form__telInput" placeholder="64111111111">
+            <input type="tel" name="contactPhone" class="form__telInput" placeholder="64111111111" required>
             <br>
             <label for="company" class="form__label">Company:</label>
-            <input type="text" name="company" class="form__textInput" placeholder="Bob Indsutries Inc.">
+            <input type="text" name="company" class="form__textInput" placeholder="Bob Indsutries Inc." required>
             <br>
             <label for="countrySelect" class="form__label">Country:</label>
-            <select name="countrySelect" id="countries" data-palceholder="Select Country" class="form__select">
+            <select name="countrySelect" id="countries" data-palceholder="Select Country" class="form__select" required>
                 <?php 
                     include "countryList.php";
                 ?>
