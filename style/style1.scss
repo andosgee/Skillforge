@@ -10,11 +10,14 @@ $colours: (
     @return map-get($colours,$colour);
   }
 
+:root{
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
     color: colour_scheme('black');
     background-color: colour_scheme('offWhite');
 }
@@ -26,25 +29,25 @@ body{
     align-items: center;
     background-color: colour_scheme('blue');
     &__logo{
-        max-height: 4em;
-        margin-left: 1em;
-        margin-right: 1em;
+        max-height: 2em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
     &__h1{
-        font-size: 2.1em;
+        font-size: 1.05em;
     }
     &__link{
         text-decoration: none;
         color: inherit;
-        font-size: 1.8em;
+        font-size: 0.9em;
         transition: font-size 0.3s, font-weight 0.3s;
         margin-left: auto;
-        margin-right: 1em;
+        margin-right: 0.5em;
         &:visited{
             color: inherit;
         }
         &:hover{
-            font-size: 2.1em;
+            font-size: 1.05em;
             font-weight: bold;
         }
     }
@@ -52,14 +55,16 @@ body{
 
 .navigation{
     background-color: colour_scheme('lightBlue');
-    padding: 1em;
-    font-size: 1.2em;
+    padding: 0.5em;
+    font-size: 1em;
+    text-align: center;
     &__link{
+        color: colour_scheme("black");
         text-decoration: none;
-        margin: 0 1em;
+        margin: 0 0.5em;
         transition: font-size 0.3s, font-weight 0.3s;
         &:hover{
-            font-size: 1.4em;
+            font-size: 0.7em;
             font-weight: bold;
         }
         &:visited{
@@ -72,7 +77,7 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-height: 12.5em;
+    min-height: 22em;
     &__wrapper{
         display: flex;
         transition: transform 0.5s ease-in-out;
@@ -142,6 +147,19 @@ body{
         text-align: justify;
         margin: 0.5em;
     }
+    &__link{
+        text-decoration: none;
+        color: colour_scheme("black");
+        margin: 0 1em;
+        transition: font-size 0.3s, font-weight 0.3s;
+        &:hover{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        &:visited{
+            color: inherit;
+        }
+    }
     &__demoForm{
         display: flex;
         flex-direction: column;
@@ -189,9 +207,90 @@ body{
     }
 }
 
+.footer{
+    background-color: colour_scheme('black');
+    font-size: 0.8em;
+    color: colour_scheme('offWhite');
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    &__wrapper{
+        flex-direction: column;
+    }
+    &__link{
+        text-decoration: none;
+        color: colour_scheme("offWhite");
+        margin: 0 1em;
+        transition: font-size 0.3s, font-weight 0.3s;
+        &:hover{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        &:visited{
+            color: inherit;
+        }
+    }
+}
+
 
 // Media query for responsive page
 @media (min-width: 768px){
+    .header{
+        &__logo{
+            max-height: 4em;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        &__h1{
+            font-size: 2.1em;
+        }
+        &__link{
+            font-size: 1.8em;
+        }
+    }
+
+    .navigation{
+        padding: 1em;
+        font-size: 1.2em;
+        text-align: left;
+        &__link{
+            margin: 0 1em;
+            &:hover{
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .marquee{
+        max-height: 12.5em;
+        &__wrapper{
+            &img{
+                width: 100%;
+            }
+        }
+        &__controls{
+            &button{
+                font-size: 3em;
+                padding: 2em;
+            }
+        }
+        &__prev{
+            margin-left: 0.625em;
+        }
+        &__next{
+            margin-right: 0.625em;
+        }
+        &__selector{
+            bottom: 1em;
+            &__image{
+                width: 1em;
+                height: 1em;
+                margin: 0 0.3125em;
+            }
+        }
+    }
+
     .content{
         &__wrapper{
             display: flex;
@@ -201,6 +300,9 @@ body{
         }
         &__text{
             width: 50%;
+        }
+        &__text--noExtra{
+            width: 100% !important; // For areas that have no extra elements
         }
         &__demoForm{
             width: 50%;
@@ -214,6 +316,18 @@ body{
     .form{
         width: 100%;
         height: auto;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        &__text{
+            width: 25%;
+        }
     }
 }
 

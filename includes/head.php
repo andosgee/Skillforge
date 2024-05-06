@@ -1,5 +1,6 @@
 <?php
     include "functions.php";
+    $conn = OpenCon();
 ?>
 <head>
     <meta charset="UTF-8">

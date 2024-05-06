@@ -1,6 +1,7 @@
 <div id="about" class="content">
     <h1 class="content__h1">About Us</h1>
-    <div class="content__text">
+    <div class="content__wrapper">
+        <div class="content__text content__text--noExtra">
         <p>Welcome to Skillforge, your premier destination for online learning 
         and SOP (Standard Operating Procedures) tools.</p>
         
@@ -27,5 +28,6 @@
         
         <p>Unlock your potential with Skillforge – where knowledge meets 
         innovation.</p>
+        </div>
     </div>
 </div>
