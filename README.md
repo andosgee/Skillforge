@@ -53,4 +53,5 @@ Password -> Sk!ll$@f0rge \
 **Company Admin** - *Username*: <> *Password*: <> \
 **Company User** - *Username*: <> *Password*: <> \
 **Admin for Adding a Company** \
-*Username*: <> *Password*: <> 
+*Username*: webmaster@skillforge.com \
+*Password*: Pa$$w0rd
