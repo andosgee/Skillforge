@@ -18,34 +18,34 @@ Uses x amount of picture from the assets/image/assets/marquee/ directory. Each i
 ### Request Demo
 Library used: Chosen. This is for searching in a dropdown. Jquery is called.
 ### php.ini email setup for windows
-[mail function]
-; For Win32 only.
-; http://php.net/smtp
-SMTP=smtp.gmail.com
-; http://php.net/smtp-port
-smtp_port=587
-; For Win32 only.
-; http://php.net/sendmail-from
-sendmail_from = mail.skillforge@gmail.com
-; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
-; http://php.net/sendmail-path
-sendmail_path ="\"C:\xampp\sendmail\sendmail.exe\" -t"
+[mail function] \
+; For Win32 only. \
+; http://php.net/smtp \
+SMTP=smtp.gmail.com \
+; http://php.net/smtp-port \
+smtp_port=587 \
+; For Win32 only. \
+; http://php.net/sendmail-from \
+sendmail_from = mail.skillforge@gmail.com \
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i"). \
+; http://php.net/sendmail-path \
+sendmail_path ="\"C:\xampp\sendmail\sendmail.exe\" -t" \
 
 ### sendmail.ini email setup for windows
-[sendmail]
-smtp_server=smtp.gmail.com
-smtp_port=587
-smtp_ssl=auto
-error_logfile=error.log
-debug_logfile=debug.log
-auth_username=mail.skillforge@gmail.com
-auth_password=<create app password by signing into Google account>
-force_sender=mail.skillforge@gmail.com
+[sendmail] \
+smtp_server=smtp.gmail.com \
+smtp_port=587 \
+smtp_ssl=auto \
+error_logfile=error.log \
+debug_logfile=debug.log \
+auth_username=mail.skillforge@gmail.com \
+auth_password=<create app password by signing into Google account> \
+force_sender=mail.skillforge@gmail.com \
 
 ## Useful Login information
 **Email Information**
 Email -> mail.skillforge@gmail.com \
-Password -> Sk!ll$@f0rge
+Password -> Sk!ll$@f0rge \
 **Company Name** \
 **Company Admin** - *Username*: <> *Password*: <> \
 **Company User** - *Username*: <> *Password*: <> \
