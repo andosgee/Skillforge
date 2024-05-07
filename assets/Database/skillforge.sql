@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2024 at 12:32 PM
+-- Generation Time: May 08, 2024 at 01:27 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -70,15 +70,17 @@ CREATE TABLE `requestdemo` (
   `email` varchar(70) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `country` varchar(56) NOT NULL,
-  `company` varchar(100) NOT NULL
+  `company` varchar(100) NOT NULL,
+  `contacted` int(1) DEFAULT NULL,
+  `contactID` int(2) DEFAULT NULL COMMENT 'Link to ID from internal login'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `requestdemo`
 --
 
-INSERT INTO `requestdemo` (`requestID`, `firstName`, `lastName`, `email`, `phone`, `country`, `company`) VALUES
-(0, 'Andrew', 'Grant', 'andosgee@gmail.com', '641111', 'New Zealand', 'Andrew inc');
+INSERT INTO `requestdemo` (`requestID`, `firstName`, `lastName`, `email`, `phone`, `country`, `company`, `contacted`, `contactID`) VALUES
+(0, 'Andrew', 'Grant', 'andosgee@gmail.com', '641111', 'New Zealand', 'Andrew inc', NULL, NULL);
 
 --
 -- Indexes for dumped tables
