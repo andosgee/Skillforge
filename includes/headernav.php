@@ -7,15 +7,13 @@
             echo"<a class='header__link' href='login.php'>Login</a>";
         }elseif($pageName =="Login" or $pageName == "Staff Login") {
             echo "<a class='header__link' href='index.php'>Home</a>";
-        // }elseif($pageName =="Staff Login"){
-        //     echo "<a class='header__link' href='index.php'>Home</a>";
         }else{
             echo "<a class='header__link' href='logout.php'>Logout</a>";
         }
     ?>
 </header>
 <nav class="navigation">
-    <a href="#about" class="navigation__link">About Us</a>
-    <a href="#contact" class="navigation__link">Contact Us</a>
-    <a href="#request" class="navigation__link">Request a Demo</a>
+    <a href="index.php#about" class="navigation__link">About Us</a>
+    <a href="index.php#contact" class="navigation__link">Contact Us</a>
+    <a href="index.php#request" class="navigation__link">Request a Demo</a>
 </nav>
