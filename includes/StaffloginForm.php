@@ -17,7 +17,23 @@
                 $userActive = $row["active"];
             }
             if(password_verify($password, $userPassword) & $userActive) {
-                echo "Logged In";
+                $result = $conn -> query($sqlGetLoginData);
+                   while ($row = $result -> fetch_assoc()){
+                    $userID = $row['internalID'];
+                    $firstName = $row['firstName'];
+                    $lastName = $row['lastName'];
+                    $email = $row['email'];
+                    $phone = $row['phone'];
+                    $internalLevel = $row['intLevel'];
+                   } 
+                session_start();
+                $_SESSION['userID'] = $userID;
+                $_SESSION['firstName'] = $firstName;
+                $_SESSION['lastName'] = $lastName;
+                $_SESSION['email'] = $email;
+                $_SESSION['phone'] = $phone;
+                $_SESSION['internalLevel'] = $internalLevel;
+                header('Location: ./sample.php');
             }else{
                 echo $passwordError;
             }
