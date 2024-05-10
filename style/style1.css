@@ -153,6 +153,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+.content__tiles {
+  justify-content: center;
+  align-items: center;
+}
+.content__tiles__item {
+  background-color: #A8DADC;
+  align-content: center;
+  text-align: center;
+}
 
 .form {
   font-size: 1.1em;
@@ -301,6 +310,15 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+  .content__tiles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content__tiles__item {
+    width: calc(90% / 2);
+    margin: 1em;
+    padding: 1em;
   }
   .form {
     width: 100%;

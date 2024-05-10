@@ -6,6 +6,8 @@ $colours: (
     'transparent' : rgba(255, 255, 255, 0),
 );
 
+$tiles-per-row-desktop: 2;
+
 @function colour_scheme($colour){
     @return map-get($colours,$colour);
   }
@@ -163,6 +165,15 @@ body{
     &__demoForm{
         display: flex;
         flex-direction: column;
+    }
+    &__tiles{
+        justify-content: center;
+        align-items: center;
+        &__item{
+            background-color: colour_scheme("lightBlue");
+            align-content: center;
+            text-align: center;
+        }
     }
 }
 
@@ -325,6 +336,15 @@ body{
             justify-content: center;
             align-items: center;
             margin: auto;
+        }
+        &__tiles{
+            display: flex;
+            flex-wrap: wrap;
+            &__item{
+                width: calc(90% / #{$tiles-per-row-desktop});
+                margin: 1em;
+                padding: 1em;
+            }
         }
     }
     .form{
