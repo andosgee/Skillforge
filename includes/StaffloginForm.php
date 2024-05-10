@@ -2,8 +2,6 @@
     // Error Setting
     $passwordError = "Error logging in: Email or Password is Incorrect";
     $error = "";
-    //$passwordDef = 'Pa$$w0rd';
-    //echo password_hash($passwordDef, PASSWORD_DEFAULT);
 
     if (isset($_POST["form__submitInput"])) {
         $email = secure($_POST["email"]);
