@@ -11,12 +11,6 @@ Skill Forge is a full stack development that simplifies SOP training and Staff t
 It allows for the company to create a module that can be completed by the user for training and/or compliance. Its aim is to centralise a learning hub in a business enviroment.
 
 ## Installation Instructions
-
-## Index Page
-### Marquee
-Uses x amount of picture from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
-### Request Demo
-Library used: Chosen. This is for searching in a dropdown. Jquery is called.
 ### php.ini email setup for windows
 [mail function] \
 ; For Win32 only. \
@@ -42,15 +36,23 @@ auth_username=mail.skillforge@gmail.com \
 auth_password=<create app password by signing into Google account> \
 force_sender=mail.skillforge@gmail.com \
 
+## Index Page
+### Marquee
+Uses x amount of picture from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
+### Request Demo
+Library used: Chosen. This is for searching in a dropdown. Jquery is called.
+
+
 ## Useful Login information
 **Email Information**
 Email -> mail.skillforge@gmail.com \
 Password -> Sk!ll$@f0rge \
 **Company Name** \
-**Company Admin** - *Username*: <> *Password*: <> \
+**Company Admin** - *Username*: damon@feelgoodinc.com *Password*: Pa$$w0rd \
 **Company User** - *Username*: <> *Password*: <> \
 **Company Name** \
 **Company Admin** - *Username*: <> *Password*: <> \
 **Company User** - *Username*: <> *Password*: <> \
 **Admin for Adding a Company** \
-*Username*: <> *Password*: <> 
+*Username*: webmaster@skillforge.com \
+*Password*: Pa$$w0rd

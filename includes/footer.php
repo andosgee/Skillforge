@@ -22,7 +22,7 @@
         </div>
         <div class="footer__text">
             <h4>Staff Portal</h4>
-            Login Here
+            <a class="footer__link" href="./staff_login.php">Login Here</a>
         </div>
         <div class="footer__text">
             Something Needs to go here in final Eval

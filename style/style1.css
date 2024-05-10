@@ -202,6 +202,7 @@ body {
   padding: 0.5em;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .footer__wrapper {
   flex-direction: column;
@@ -220,6 +221,16 @@ body {
   color: inherit;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+.login__wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .header__logo {
     max-height: 4em;
@@ -231,6 +242,9 @@ body {
   }
   .header__link {
     font-size: 1.8em;
+  }
+  .header__link:hover {
+    font-size: 2.1em;
   }
   .navigation {
     padding: 1em;
