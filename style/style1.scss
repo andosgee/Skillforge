@@ -168,11 +168,26 @@ body{
     }
     &__tiles{
         justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         &__item{
+            width: 90%;
+            color: colour_scheme("black");
+            text-decoration: none;
             background-color: colour_scheme("lightBlue");
             align-content: center;
             text-align: center;
+            height: 30vh;
+            margin-bottom: 3em;
+            border-radius: 1.8em;
+            box-shadow: 0.5em 0.8em colour_scheme("blue");
+            &:visited{
+                color: inherit;
+            }
+            &__image{
+                height: 60%;
+            }
         }
     }
 }
@@ -225,7 +240,6 @@ body{
     padding: 0.5em;
     display: flex;
     flex-direction: column;
-    width: 100%;
     &__wrapper{
         flex-direction: column;
     }
@@ -327,7 +341,7 @@ body{
             width: 50%;
         }
         &__text--noExtra{
-            width: 100% !important; // For areas that have no extra elements
+            width: 100% !important;
         }
         &__demoForm{
             width: 50%;
@@ -339,6 +353,7 @@ body{
         }
         &__tiles{
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             &__item{
                 width: calc(90% / #{$tiles-per-row-desktop});
