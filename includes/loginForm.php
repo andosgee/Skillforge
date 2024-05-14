@@ -1,7 +1,6 @@
 <?php 
 // Error Setting
 $passwordError = "Error logging in: Email or Password is Incorrect";
-echo password_hash($passwordDef, PASSWORD_DEFAULT);
 
 if (isset($_POST["form__submitInput"])) {
     $email = secure($_POST["email"]);
@@ -28,6 +27,7 @@ if (isset($_POST["form__submitInput"])) {
                 $email = $row['email'];
                 $phone = $row['phone'];
                 $companyLevel = $row['level'];
+                $active = $row['active'];
                 $companyID = $row['companyID'];
                } 
             session_start();
@@ -38,7 +38,8 @@ if (isset($_POST["form__submitInput"])) {
             $_SESSION['phone'] = $phone;
             $_SESSION['companyLevel'] = $companyLevel;
             $_SESSION['companyID'] = $companyID;
-            header('Location: ./sample.php');
+            $_SESSION['active'] = $active;
+            header('Location: ./user_dashboard.php');
         }else{
             echo $passwordError;
         }

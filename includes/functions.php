@@ -1,6 +1,6 @@
 <?php 
     function redirect(){ // Redirects
-        header("Location : /index.php");
+        header("Location: ./index.php");
     }
 
     function OpenCon(){ // Opens the connection
@@ -32,5 +32,19 @@
         }
         echo "<title>{$pageTitle} | Skillforge</title>";
         return $pageTitle;
+    }
+
+    function checkSession(){
+        session_start();
+        if(!isset($_SESSION["active"])){
+            redirect();
+        }
+    }
+
+    function checkInternalSession(){
+        session_start();
+        if(!isset($_SESSION["internalLevel"])){
+            redirect();
+        }
     }
 ?>
