@@ -31,7 +31,7 @@
                 $_SESSION['email'] = $email;
                 $_SESSION['phone'] = $phone;
                 $_SESSION['internalLevel'] = $internalLevel;
-                header('Location: ./sample.php');
+                header('Location: ./internal_dashboard.php');
             }else{
                 echo $passwordError;
             }

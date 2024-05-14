@@ -40,4 +40,11 @@
             redirect();
         }
     }
+
+    function checkInternalSession(){
+        session_start();
+        if(!isset($_SESSION["internalLevel"])){
+            redirect();
+        }
+    }
 ?>

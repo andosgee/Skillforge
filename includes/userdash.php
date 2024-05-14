@@ -2,7 +2,7 @@
     <?PHP 
         echo "<h1 class='content__h1'>User Dashboard - What would you like to do {$_SESSION['firstName']}?</h1>";
     ?>
-    <div class="content_wrapper">
+    <div class="content__wrapper">
         <div class="content__tiles">
             <a href="./sample.php" class="content__tiles__item">
                 <h2>My Details</h2>
