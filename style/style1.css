@@ -193,6 +193,11 @@ body {
   font-size: 1em;
   width: 8em;
 }
+.form__textNum {
+  margin-bottom: 1em;
+  font-size: 1em;
+  width: 2em;
+}
 .form__telInput {
   margin-bottom: 1em;
   font-size: 1em;

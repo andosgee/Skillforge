@@ -4,7 +4,7 @@
     ?>
     <div class="content__wrapper">
         <div class="content__tiles">
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./add_company.php" class="content__tiles__item">
                 <h2>Add Company</h2>
                 Add a new company here as well as the dedicated administrator.
                 <p></p>
