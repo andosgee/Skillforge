@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2024 at 01:20 PM
+-- Generation Time: May 15, 2024 at 12:28 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -30,15 +30,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `companies` (
   `companyID` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `address` mediumtext NOT NULL
+  `unitStreetNum` varchar(20) NOT NULL,
+  `Address1` varchar(255) NOT NULL,
+  `Address2` varchar(255) DEFAULT NULL,
+  `Country` varchar(50) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) DEFAULT NULL,
+  `Zip` varchar(10) DEFAULT NULL,
+  `phoneNumber` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `companies`
 --
 
-INSERT INTO `companies` (`companyID`, `name`, `address`) VALUES
-(1, 'Feel Good Inc.', '1 Demon Days Way, Christchurch, 7615, New Zealand');
+INSERT INTO `companies` (`companyID`, `name`, `unitStreetNum`, `Address1`, `Address2`, `Country`, `City`, `State`, `Zip`, `phoneNumber`) VALUES
+(1, 'Feel Good Inc.', '1', 'Demon Days Way', NULL, 'New Zealand', 'Christchurch', NULL, '7615', '6435813148');
 
 -- --------------------------------------------------------
 
