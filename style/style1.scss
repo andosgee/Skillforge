@@ -236,6 +236,12 @@ body{
             background-color: #30617B;
         }
     }
+    &__largeText{
+        font-size: 1em;
+        font-family: Verdana, sans-serif;
+        width: 100%;
+        height: 35vh;
+    }
 }
 
 .footer{

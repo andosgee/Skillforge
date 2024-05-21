@@ -16,7 +16,7 @@
                 <p></p>
                 <img class='content__tiles__item__image' src="./assets/image/logo/managecompany.svg" alt="Manage Company Icon">
             </a>
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./demo_requests.php" class="content__tiles__item">
                 <h2>Demo Requests</h2>
                 View the demonstration requests here.
                 <p></p>
