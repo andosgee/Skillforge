@@ -23,12 +23,6 @@
                 <img class='content__tiles__item__image' src="./assets/image/logo/demorequest.svg" alt="Demo Requests Icon">
             </a>
             <a href="./sample.php" class="content__tiles__item">
-                <h2>Contact Requests</h2>
-                View the contact requests here.
-                <p></p>
-                <img class='content__tiles__item__image' src="./assets/image/logo/contactrequest.svg" alt="Contact Requests Icon">
-            </a>
-            <a href="./sample.php" class="content__tiles__item">
                 <h2>Manage Internal Users</h2>
                 Manage the internal users of Skillforge.
                 <p></p>

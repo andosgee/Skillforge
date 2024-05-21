@@ -340,6 +340,7 @@ body {
     margin: auto;
   }
   .content__tiles {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
