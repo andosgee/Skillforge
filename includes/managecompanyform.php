@@ -1,4 +1,3 @@
-
 <form id="id" method="GET" class="form form--details">
     <fieldset class="form__fieldset">
         <legend class="form__legend">Select Company</legend>
