@@ -316,6 +316,9 @@ body {
     align-items: flex-start;
     justify-content: space-between;
   }
+  .content__wrapper--form {
+    flex-direction: column;
+  }
   .content__text {
     width: 50%;
   }
@@ -343,6 +346,10 @@ body {
   .form {
     width: 100%;
     height: auto;
+  }
+  .form--details {
+    text-align: center;
+    justify-content: center;
   }
   .footer {
     display: flex;

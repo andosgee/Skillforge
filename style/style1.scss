@@ -341,6 +341,9 @@ body{
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
+            &--form{
+                flex-direction: column;
+            }
         }
         &__text{
             width: 50%;
@@ -370,6 +373,10 @@ body{
     .form{
         width: 100%;
         height: auto;
+        &--details{
+            text-align: center;
+            justify-content: center;
+        }
     }
 
     .footer{

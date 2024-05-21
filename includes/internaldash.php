@@ -10,9 +10,9 @@
                 <p></p>
                 <img class='content__tiles__item__image' src="./assets/image/logo/addcompany.svg" alt="Add Company Icon">
             </a>
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./manage_companies.php" class="content__tiles__item">
                 <h2>Manage Companies</h2>
-                Manage an existing company here as well as the dedicated administrator.
+                Manage an existing company here.
                 <p></p>
                 <img class='content__tiles__item__image' src="./assets/image/logo/managecompany.svg" alt="Manage Company Icon">
             </a>
