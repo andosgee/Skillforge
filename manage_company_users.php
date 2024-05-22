@@ -2,19 +2,20 @@
 <html lang="en">
 <?php 
     include "includes/head.php";
-    checkInternalSession();
+    checkSession();
 ?>
 
 <body>
     <?php
         include "includes/headernav.php";
-        include "includes/nav.php";
+        include "includes/userNav.php";
     ?>
-    <div id="manageCompany" class="content">
+    <div class="content">
         <div class="content__wrapper content__wrapper--form">
-            <?php include "includes/manageuserform.php";
-            include "includes/editusersform.php";
-            include "includes/changepassword.php";?>
+            <?php
+                include "includes/managecompanyuserform.php";
+                include "includes/editcompanyusersform.php";
+            ?>
         </div>
     </div>
 

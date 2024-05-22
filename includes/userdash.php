@@ -4,7 +4,7 @@
     ?>
     <div class="content__wrapper">
         <div class="content__tiles">
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./my_details.php" class="content__tiles__item">
                 <h2>My Details</h2>
                 Modify your details here.
                 <p></p>
@@ -65,7 +65,7 @@
                         <p></p>
                         <img class='content__tiles__item__image' src='./assets/image/logo/searchmodules.svg' alt='Create Modules icon.'>
                     </a>
-                    <a href='./sample.php' class='content__tiles__item'>
+                    <a href='./manage_company_users.php' class='content__tiles__item'>
                         <h2>Manage Users</h2>
                         Create and manage users.
                         <p></p>

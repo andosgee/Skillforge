@@ -12,9 +12,8 @@
     ?>
     <div id="manageCompany" class="content">
         <div class="content__wrapper content__wrapper--form">
-            <?php include "includes/manageuserform.php";
-            include "includes/editusersform.php";
-            include "includes/changepassword.php";?>
+            <?php include "includes/managecompanyform.php";
+            include "includes/editcompanyform.php";?>
         </div>
     </div>
 

@@ -206,6 +206,11 @@ body{
         font-size: 1em;
         width: 8em;
     }
+    &__textNum{
+        margin-bottom: 1em;
+        font-size: 1em;
+        width: 2em;
+    }
     &__telInput{
         margin-bottom: 1em;
         font-size: 1em;
@@ -230,6 +235,12 @@ body{
         &:hover{
             background-color: #30617B;
         }
+    }
+    &__largeText{
+        font-size: 1em;
+        font-family: Verdana, sans-serif;
+        width: 100%;
+        height: 35vh;
     }
 }
 
@@ -336,6 +347,9 @@ body{
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
+            &--form{
+                flex-direction: column;
+            }
         }
         &__text{
             width: 50%;
@@ -352,6 +366,7 @@ body{
             margin: auto;
         }
         &__tiles{
+            align-items: center;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -365,6 +380,10 @@ body{
     .form{
         width: 100%;
         height: auto;
+        &--details{
+            text-align: center;
+            justify-content: center;
+        }
     }
 
     .footer{

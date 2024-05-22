@@ -193,6 +193,11 @@ body {
   font-size: 1em;
   width: 8em;
 }
+.form__textNum {
+  margin-bottom: 1em;
+  font-size: 1em;
+  width: 2em;
+}
 .form__telInput {
   margin-bottom: 1em;
   font-size: 1em;
@@ -217,6 +222,12 @@ body {
 }
 .form__submitInput:hover {
   background-color: #30617B;
+}
+.form__largeText {
+  font-size: 1em;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+  height: 35vh;
 }
 
 .footer {
@@ -311,6 +322,9 @@ body {
     align-items: flex-start;
     justify-content: space-between;
   }
+  .content__wrapper--form {
+    flex-direction: column;
+  }
   .content__text {
     width: 50%;
   }
@@ -326,6 +340,7 @@ body {
     margin: auto;
   }
   .content__tiles {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -338,6 +353,10 @@ body {
   .form {
     width: 100%;
     height: auto;
+  }
+  .form--details {
+    text-align: center;
+    justify-content: center;
   }
   .footer {
     display: flex;

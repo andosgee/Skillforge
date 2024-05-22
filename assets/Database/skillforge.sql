@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2024 at 01:20 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- Generation Time: May 22, 2024 at 11:43 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,15 +30,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `companies` (
   `companyID` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `address` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `unitStreetNum` varchar(20) NOT NULL,
+  `Address1` varchar(255) NOT NULL,
+  `Address2` varchar(255) DEFAULT NULL,
+  `Country` varchar(50) NOT NULL,
+  `City` varchar(100) NOT NULL,
+  `State` varchar(100) DEFAULT NULL,
+  `Zip` varchar(10) DEFAULT NULL,
+  `phoneNumber` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `companies`
 --
 
-INSERT INTO `companies` (`companyID`, `name`, `address`) VALUES
-(1, 'Feel Good Inc.', '1 Demon Days Way, Christchurch, 7615, New Zealand');
+INSERT INTO `companies` (`companyID`, `name`, `unitStreetNum`, `Address1`, `Address2`, `Country`, `City`, `State`, `Zip`, `phoneNumber`) VALUES
+(1, 'Feel Good Inc.', '1', 'Demon Days Way', NULL, 'New Zealand', 'Christchurch', NULL, '7615', '6411111');
 
 -- --------------------------------------------------------
 
@@ -49,7 +56,16 @@ INSERT INTO `companies` (`companyID`, `name`, `address`) VALUES
 CREATE TABLE `internallevel` (
   `ID` int(2) NOT NULL,
   `levelName` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `internallevel`
+--
+
+INSERT INTO `internallevel` (`ID`, `levelName`) VALUES
+(1, 'Viewer'),
+(2, 'Low Admin'),
+(3, 'Full Admin');
 
 -- --------------------------------------------------------
 
@@ -66,14 +82,15 @@ CREATE TABLE `internallogin` (
   `password` varchar(256) NOT NULL,
   `intLevel` int(2) NOT NULL,
   `active` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `internallogin`
 --
 
 INSERT INTO `internallogin` (`internalID`, `firstName`, `lastName`, `email`, `phone`, `password`, `intLevel`, `active`) VALUES
-(1, 'Web', 'Master', 'webmaster@skillforge.com', '64111111', '$2y$10$Y8FkFjWlSehvNyuC3AqZWuELI8f.ie6OFY08Kr6Oimxybz.rsYj1a', 3, 1);
+(1, 'Web', 'Master', 'webmaster@skillforge.com', '64111111', '$2y$10$Y8FkFjWlSehvNyuC3AqZWuELI8f.ie6OFY08Kr6Oimxybz.rsYj1a', 3, 1),
+(2, 'Andrew', 'Grant', 'andrew@skillforge.com', '6411', '$2y$10$qCtTvgAO4VQU32xwZmSgiuGr8N3CzgkeNDz5XZRVtZm3t.yMKFWeK', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -91,14 +108,14 @@ CREATE TABLE `requestdemo` (
   `company` varchar(100) NOT NULL,
   `contacted` int(1) DEFAULT NULL,
   `contactID` int(2) DEFAULT NULL COMMENT 'Link to ID from internal login'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `requestdemo`
 --
 
 INSERT INTO `requestdemo` (`requestID`, `firstName`, `lastName`, `email`, `phone`, `country`, `company`, `contacted`, `contactID`) VALUES
-(0, 'Andrew', 'Grant', 'andosgee@gmail.com', '641111', 'New Zealand', 'Andrew inc', NULL, NULL);
+(1, 'Andrew', 'Grant', 'andosgee@gmail.com', '641111', 'New Zealand', 'Andrew inc', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -115,7 +132,7 @@ CREATE TABLE `userdata` (
   `level` int(2) NOT NULL,
   `active` int(1) NOT NULL,
   `companyID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `userdata`
@@ -134,7 +151,7 @@ CREATE TABLE `userlevel` (
   `levelID` int(11) NOT NULL,
   `companyID` int(11) NOT NULL,
   `levelName` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `userlevel`
@@ -153,7 +170,7 @@ CREATE TABLE `userlogin` (
   `loginID` int(5) NOT NULL,
   `userID` int(5) NOT NULL,
   `password` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `userlogin`
@@ -216,19 +233,25 @@ ALTER TABLE `userlogin`
 -- AUTO_INCREMENT for table `companies`
 --
 ALTER TABLE `companies`
-  MODIFY `companyID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `companyID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `internallevel`
 --
 ALTER TABLE `internallevel`
-  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `internallogin`
 --
 ALTER TABLE `internallogin`
-  MODIFY `internalID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `internalID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `requestdemo`
+--
+ALTER TABLE `requestdemo`
+  MODIFY `requestID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `userdata`
