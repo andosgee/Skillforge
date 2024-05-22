@@ -81,7 +81,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     }
     if (count($update_fields) > 0) {
         $update_sql = "UPDATE companies SET " . implode(", ", $update_fields) . " WHERE companyID = ?";
-        // settype($companyID, "integer");
+        
         $update_params[] = $companyID; // Adding company_id to the parameters list
         $types .= 'i'; // Adding the type for company_id
         
