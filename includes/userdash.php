@@ -59,7 +59,7 @@
                         <p></p>
                         <img class='content__tiles__item__image' src='./assets/image/logo/assignmodules.svg' alt='Assign Modules icon.'>
                     </a>
-                    <a href='./sample.php' class='content__tiles__item'>
+                    <a href='./create_module.php' class='content__tiles__item'>
                         <h2>Create Module</h2>
                         Create a module.
                         <p></p>

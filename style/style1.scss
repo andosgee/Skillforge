@@ -24,6 +24,20 @@ body{
     background-color: colour_scheme('offWhite');
 }
 
+.ql-toolbar {
+    border: 1px solid #ccc;
+    width: 100% !important;
+    height: 3em;
+    background-color: #B0B7C0;
+}
+
+#editor-container {
+    width: 100%;
+    font-size: 1em;
+    min-height: 10em;
+    background-color: #FAF9F6;
+}
+
 .header{
     display: flex;
     width: 100%;
