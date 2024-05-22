@@ -4,7 +4,7 @@
     ?>
     <div class="content__wrapper">
         <div class="content__tiles">
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./my_details.php" class="content__tiles__item">
                 <h2>My Details</h2>
                 Modify your details here.
                 <p></p>
