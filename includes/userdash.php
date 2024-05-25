@@ -59,11 +59,11 @@
                         <p></p>
                         <img class='content__tiles__item__image' src='./assets/image/logo/assignmodules.svg' alt='Assign Modules icon.'>
                     </a>
-                    <a href='./sample.php' class='content__tiles__item'>
+                    <a href='./create_module.php' class='content__tiles__item'>
                         <h2>Create Module</h2>
                         Create a module.
                         <p></p>
-                        <img class='content__tiles__item__image' src='./assets/image/logo/searchmodules.svg' alt='Create Modules icon.'>
+                        <img class='content__tiles__item__image' src='./assets/image/logo/createmodule.svg' alt='Create Modules icon.'>
                     </a>
                     <a href='./manage_company_users.php' class='content__tiles__item'>
                         <h2>Manage Users</h2>
