@@ -18,7 +18,7 @@ body {
 }
 
 #editor-container {
-  width: 100%;
+  width: 100% !important;
   font-size: 1em;
   min-height: 10em;
   background-color: #FAF9F6;
