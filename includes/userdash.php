@@ -22,7 +22,7 @@
                 <p></p>
                 <img class="content__tiles__item__image" src="./assets/image/logo/requiredmodules.svg" alt="Required Modules icon.">
             </a>
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./search_modules.php" class="content__tiles__item">
                 <h2>Module Search</h2>
                 Search for a Module to complete here.
                 <p></p>
