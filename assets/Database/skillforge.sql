@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2024 at 12:56 PM
+-- Generation Time: Jun 01, 2024 at 09:33 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -133,10 +133,7 @@ CREATE TABLE `modules` (
 --
 
 INSERT INTO `modules` (`id`, `companyID`, `title`, `descriptor`, `thumbnail`, `createdAt`) VALUES
-(1, 1, 'Test Module', 'Sample module', 'uploads/thumbnails/IMG_3986.jpg', '2024-05-22 10:57:53'),
-(2, 1, 'Sample Module', 'Module for TESTING', '', '2024-05-23 09:17:08'),
-(3, 1, 'Another Test', 'Test', '', '2024-05-23 10:14:19'),
-(4, 1, 'Another ine', 'anspasd', '', '2024-05-25 09:58:04');
+(6, 1, 'Sample', 'Sample', '', '2024-05-26 22:03:19');
 
 -- --------------------------------------------------------
 
@@ -150,20 +147,6 @@ CREATE TABLE `questions` (
   `questionText` text NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `questions`
---
-
-INSERT INTO `questions` (`id`, `moduleId`, `questionText`, `createdAt`) VALUES
-(1, 2, '{\"ops\":[{\"insert\":\"SOmething\\n\"}]}', '2024-05-23 10:02:01'),
-(2, 2, '{\"ops\":[{\"insert\":\"SOmething\\n\"}]}', '2024-05-23 10:02:10'),
-(3, 2, '{\"ops\":[{\"insert\":\"SOmething\\n\"}]}', '2024-05-23 10:02:10'),
-(4, 3, '{\"ops\":[{\"insert\":\"oemth\\n\"}]}', '2024-05-23 10:15:05'),
-(5, 4, '{\"ops\":[{\"insert\":\"\\n\"}]}', '2024-05-25 09:58:08'),
-(6, 4, '{\"ops\":[{\"insert\":\"fawewaf\\n\"}]}', '2024-05-25 09:58:12'),
-(7, 4, '{\"ops\":[{\"insert\":\"afeaf\\n\"}]}', '2024-05-25 09:58:16'),
-(8, 4, '{\"ops\":[{\"insert\":\"afeaf\\n\"}]}', '2024-05-25 09:58:35');
 
 -- --------------------------------------------------------
 
@@ -348,7 +331,7 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT for table `modules`
 --
 ALTER TABLE `modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `questions`
