@@ -33,7 +33,7 @@
             <a href="./run_module.php#TimeManagement" class="content__tiles__item">
                 <img src="./assets/image/assets/sampleModules/time.jpg" alt="Time Management and Productivity Image" class="content__tiles__item__image">
                 <h2>Time Management and Productivity</h2>
-                <p>trategies for prioritising tasks, managing time effectively, and using productivity tools to maximize efficiency</p>
+                <p>Strategies for prioritising tasks, managing time effectively, and using productivity tools to maximize efficiency</p>
             </a>
             <a href="./run_module.php#TechnicalSkills" class="content__tiles__item">
                 <img src="./assets/image/assets/sampleModules/technical.jpg" alt="Technical Skills Training Image" class="content__tiles__item__image">

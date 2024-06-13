@@ -10,7 +10,7 @@
                 <p></p>
                 <img class="content__tiles__item__image" src="./assets/image/logo/mydetails.svg" alt="My details icon.">
             </a>
-            <a href="./sample.php" class="content__tiles__item">
+            <a href="./module_History.php" class="content__tiles__item">
                <h2>My Module History</h2>
                 View your completed modules here.
                 <p></p>
