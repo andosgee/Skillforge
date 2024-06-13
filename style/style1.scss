@@ -222,6 +222,15 @@ body{
     min-height: 30vw;
 }
 
+#piechart{
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .module{
     display: flex;
     flex-direction: column;
