@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2024 at 12:56 PM
+-- Generation Time: Jun 01, 2024 at 09:33 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -101,10 +101,17 @@ INSERT INTO `internallogin` (`internalID`, `firstName`, `lastName`, `email`, `ph
 CREATE TABLE `media` (
   `id` int(11) NOT NULL,
   `questionID` int(11) NOT NULL,
-  `mediaType` enum('audio','image','video','pdf') NOT NULL,
+  `mediaType` enum('audio','image','video','pdf','none') NOT NULL,
   `mediaPath` varchar(255) NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `media`
+--
+
+INSERT INTO `media` (`id`, `questionID`, `mediaType`, `mediaPath`, `createdAt`) VALUES
+(1, 8, 'audio', 'uploads/media/IMG_3986.png', '2024-05-25 09:58:35');
 
 -- --------------------------------------------------------
 
@@ -120,6 +127,13 @@ CREATE TABLE `modules` (
   `thumbnail` varchar(255) NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `modules`
+--
+
+INSERT INTO `modules` (`id`, `companyID`, `title`, `descriptor`, `thumbnail`, `createdAt`) VALUES
+(6, 1, 'Sample', 'Sample', '', '2024-05-26 22:03:19');
 
 -- --------------------------------------------------------
 
@@ -311,19 +325,19 @@ ALTER TABLE `internallogin`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `modules`
 --
 ALTER TABLE `modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `requestdemo`

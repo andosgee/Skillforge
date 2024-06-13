@@ -1,7 +1,7 @@
 <div class="marquee">
     <div class="marquee__wrapper">
         <?php 
-            $images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg"];
+            $images = ["Mar1.jpg", "mar2.jpg", "mar3.jpg"];
 
             foreach ($images as $image) {
                 echo '<img src="assets/image/assets/marquee/'. $image .'">';
