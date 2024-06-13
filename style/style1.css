@@ -150,6 +150,13 @@ body {
   text-align: justify;
   margin: 0.5em;
 }
+.content__search {
+  width: 100%;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .content__link {
   text-decoration: none;
   color: #000000;

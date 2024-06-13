@@ -163,6 +163,13 @@ body{
         text-align: justify;
         margin: 0.5em;
     }
+    &__search{
+        width: 100%;
+        margin-bottom: 1em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     &__link{
         text-decoration: none;
         color: colour_scheme("black");
