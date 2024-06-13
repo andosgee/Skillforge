@@ -213,6 +213,15 @@ body{
     }
 }
 
+#chart_div{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    min-height: 30vw;
+}
+
 .module{
     display: flex;
     flex-direction: column;
