@@ -41,7 +41,7 @@
                     // Extract the levelName
                     $levelName = $row['levelName'];
                     if ($levelName == 'Admin') {
-                        echo "<a href='./sample.php' class='content__tiles__item'>
+                        echo "<a href='./reports.php' class='content__tiles__item'>
                         <h2>Reports</h2>
                         Generate Reports.
                         <p></p>

@@ -1,4 +1,4 @@
-<div clas="content">
+<div class="content">
     <div class="content__search">
         <form class="form">
             <label for="search" class="form__label">Search:</label>
