@@ -34,25 +34,23 @@ error_logfile=error.log \
 debug_logfile=debug.log \
 auth_username=mail.skillforge@gmail.com \
 auth_password=<create app password by signing into Google account> \
-force_sender=mail.skillforge@gmail.com \
+force_sender=mail.skillforge@gmail.com 
 
 ## Index Page
 ### Marquee
 Uses x amount of picture from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
 ### Request Demo
 Library used: Chosen. This is for searching in a dropdown. Jquery is called.
+Quill has been used as a text editor.
 
 
 ## Useful Login information
 **Email Information**
 Email -> mail.skillforge@gmail.com \
 Password -> Sk!ll$@f0rge \
-**Company Name** \
+**Feel Good Inc** \
 **Company Admin** - *Username*: damon@feelgoodinc.com *Password*: Pa$$w0rd \
-**Company User** - *Username*: <> *Password*: <> \
-**Company Name** \
-**Company Admin** - *Username*: <> *Password*: <> \
-**Company User** - *Username*: <> *Password*: <> \
+
 **Admin for Adding a Company** \
 *Username*: webmaster@skillforge.com \
 *Password*: Pa$$w0rd
