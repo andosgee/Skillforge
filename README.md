@@ -1,4 +1,4 @@
-# BCDE213 Project - Skill Forge #
+# Skill Forge #
 
 ## Langauges/Markup Used
 PHP, HTML, JS, SASS, SQL
@@ -45,9 +45,6 @@ Quill has been used as a text editor.
 
 
 ## Useful Login information
-**Email Information**
-Email -> mail.skillforge@gmail.com \
-Password -> Sk!ll$@f0rge \
 **Feel Good Inc** \
 **Company Admin** - *Username*: damon@feelgoodinc.com *Password*: Pa$$w0rd \
 
