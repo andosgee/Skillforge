@@ -1,16 +1,42 @@
-# Skill Forge #
+# SkillForge 
+A Full Stack High Fidelity Model
+___
+## Table of Contents
+- [About](#about)
+- [Installation](#installation)
+- [License](#license)
+___
+## About
+SkillForge is a full stack development that simplifies SOP training and Staff training tools through a Web-based application. It will allow multiple types of users (admins, clients) to interact through a log in to their own companies resources.
+It allows for the company to create a module that can be completed by the user for training and/or compliance. Its aim is to centralise a learning hub in a business environment.
+![Home](https://andrewdevelops.com/wp-content/uploads/2024/07/Home-1.png)
+![Internal Dashboard](https://andrewdevelops.com/wp-content/uploads/2024/07/Admin-1.png)
 
-## Langauges/Markup Used
+### Langauges/Markup Used
 PHP, HTML, JS, SASS, SQL
 
-## Runs On
+### Index Page
+#### Marquee
+Uses `x` amount of pictures from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
+
+#### Request Demo
+Library used: Chosen. This is for searching in a dropdown. Jquery is called.
+Quill has been used as a text editor.
+
+### Runs On
 Xampp Stack, using PHP MyAdmin, MYsql, Apache
+___
 
-## Use Case
-Skill Forge is a full stack development that simplifies SOP training and Staff training tools through a Web-based application. It will allow multiple types of users (admins, clients) to interact through a log in to their own companies resources.
-It allows for the company to create a module that can be completed by the user for training and/or compliance. Its aim is to centralise a learning hub in a business enviroment.
+## Installation
+Using an Xampp stack with PHP, MySQL, and an Apache WebServer.
 
-## Installation Instructions
+1. Download or Clone the Repo.
+2. Unzip the download (if applicable).
+3. Place the folder into `[webserver path]/htdocs`
+4. Start the Webserver.
+5. Create the database in PHP MyAdmin called SkillForge
+6. Upload the the `database.sql` file
+
 ### php.ini email setup for windows
 [mail function] \
 ; For Win32 only. \
@@ -36,18 +62,14 @@ auth_username=mail.skillforge@gmail.com \
 auth_password=<create app password by signing into Google account> \
 force_sender=mail.skillforge@gmail.com 
 
-## Index Page
-### Marquee
-Uses x amount of picture from the assets/image/assets/marquee/ directory. Each image lasts for 5 seconds and can be overrun from the side buttons or using the radio buttons at the bottom of the marquee.
-### Request Demo
-Library used: Chosen. This is for searching in a dropdown. Jquery is called.
-Quill has been used as a text editor.
+### Useful Login information
+**Feel Good Inc** 
+**Company Admin** - *Username*: damon@feelgoodinc.com
+*Password*: Pa$$w0rd 
 
-
-## Useful Login information
-**Feel Good Inc** \
-**Company Admin** - *Username*: damon@feelgoodinc.com *Password*: Pa$$w0rd \
-
-**Admin for Adding a Company** \
-*Username*: webmaster@skillforge.com \
+**Admin for Adding a Company** 
+*Username*: webmaster@skillforge.com 
 *Password*: Pa$$w0rd
+___
+## License
+Distributed under the Apache License. See `LICENSE` for more information.
